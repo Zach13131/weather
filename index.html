@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <script>
+      const theme = localStorage.getItem("theme") || "light";
+      document.documentElement.classList.add(theme);
+    </script>
+
+    <template class="main__error-mes-temp">
+      <div class="main__error-mes">City not found</div>
+    </template>
+    <header>
+      <div class="header__btns">
+        <label class="theme-switcher-label" for="theme-switcher">
+          <input type="checkbox" id="theme-switcher" />
+        </label>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <div class="main__inner">
+          <div class="main__block">
+            <div class="main__search">
+              <input class="main__input" type="text" />
+            </div>
+            <div class="main__location">
+              <h4 class="main__city">Tashkent</h4>
+              <h5 class="main__date">UZ</h5>
+            </div>
+            <div class="main__all">
+              <div class="main__temp">32 °c</div>
+              <div class="main__weather">rain</div>
+              <div class="main__min-max">12 - 14</div>
+              <div class="main__wind-icon">-></div>
+              <div class="main__wind"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sun">
+      <div class="ray_box">
+        <div class="ray ray1"></div>
+        <div class="ray ray2"></div>
+        <div class="ray ray3"></div>
+        <div class="ray ray4"></div>
+        <div class="ray ray5"></div>
+        <div class="ray ray6"></div>
+        <div class="ray ray7"></div>
+        <div class="ray ray8"></div>
+        <div class="ray ray9"></div>
+        <div class="ray ray10"></div>
+      </div>
+    </div>
+    <!-- <img src="./1/rain.png"" alt="" style="width: 50px; height: 50px" /> -->
+    <script src="./scripts/script.js" type="module"></script>
+  </body>
+</html>
