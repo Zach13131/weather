@@ -106,7 +106,7 @@ h4 {
   transform: translate(-50%);
   width: 100%;
   top: -20px;
-  animation: leave 1s linear forwards;
+  animation: leave 1.8s linear forwards;
 }
 
 @keyframes leave {
@@ -115,7 +115,7 @@ h4 {
     opacity: 1;
   }
   to {
-    top: -100px;
+    top: -200px;
     opacity: 0;
   }
 }

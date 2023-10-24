@@ -3,7 +3,6 @@ const URL = " https://api.openweathermap.org/data/2.5/weather?units=metric&&";
 const LACATION = "Tashkent";
 
 import { selectTheme } from "./SelectTheme.js";
-import { dateBuilder } from "./dataBuilder.js";
 import { displayResults } from "./displayResults.js";
 
 selectTheme();
